@@ -1,0 +1,109 @@
+@import url("common-css.css");
+/* Start background-event  */
+.background-event .title{
+    background-color: var(--background-section);
+    padding: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+/* End background-event  */
+/* Start events */
+.events{
+    margin-top: 10px;
+    font-family: 'Roboto';
+}
+.events .container-dashborad{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+}
+.events .box{
+    position: relative;
+    flex-basis: calc(100% / 2);
+    height: 270px;
+    border-radius: 10px; 
+    overflow: hidden;
+}
+.events .box .over-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0 ),rgba(0,0,0,0 ),rgba(0,0,0,0 ), rgba(0 0 0 /80%), rgba(0 0 0 /100%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 13px;
+    border-radius: 10px; 
+}
+.events .box .over-lay a.link-a{
+    min-height: 270px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.events .box .row-1{
+    display: flex;
+    justify-content: space-between;
+}
+.events .box .row-1 a.link-box{
+    display: block;
+    width: fit-content;
+    color: #fff;
+    background-color: #1EA723;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+.events .box .row-1 a.a-hidden{
+    visibility: hidden;
+}
+.events .box .row-1 i{
+    background-color: #FF334B;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 11px;
+}
+.events .box .row-2 div:first-child{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.events .box .row-2 img{
+    height: 20px;
+    margin-right: 6px;
+}
+.events .box .row-2 img + span{
+    font-size: 11px;
+}
+.events .box .row-2 h3{
+    font-family: 'Oswald';
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+.events .box .row-2 h3 + span{
+    opacity: 50%;
+    font-size: 12px;
+}
+
+.events .box .row-2 div:last-of-type{
+    margin-top: 20px;
+    font-size: 11px;
+    color: #CACACA;
+}
+.events .box .row-2 div:last-of-type i{
+    margin-right: 5px;
+}
+.events .box .row-2 div:last-of-type span:first-of-type{
+    margin-right: 20px;
+}
+/* End events */

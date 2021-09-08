@@ -1,0 +1,91 @@
+@import url("common-css.css");
+main{
+    font-family: 'Roboto';
+}
+/* Start Title */
+.title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 20px;
+}
+.title .text{
+    margin-right: 15px;
+    margin-top: 50px;
+}
+@media (max-width: 992px){
+    .title .text{
+        margin-top: 15px;
+    }
+}
+.title .text p{
+    font-size: 35px;
+}
+@media (max-width: 992px){
+    .title .text p{
+        font-size: 29px;
+    }
+}
+.title .text span{
+    color: #AEAEB2;
+    line-height: 1.8;
+    display: block;
+    font-size: 20px;
+}
+@media (min-width: 1100px) {
+    .title .text span{
+        width: 70%;
+    }
+}
+@media (max-width: 992px){
+    .title .text span{
+        font-size: 12px;
+    }
+}
+/* End Tilte */
+/* Start About-us */
+.about-us{
+    padding: 20px;
+}
+.about-us > p{
+    font-size: 23px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.about-us > p::before{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #B6B6B6;
+}
+.about-us > div{
+    margin: 60px 0;
+}
+.about-us span{
+    margin: 0 0 20px;
+    display: block;
+    font-size: 20px;
+}
+.about-us > div p{
+    color: #AEAEB2;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 15px;
+}
+.about-us > div p::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+/* End About-us */

@@ -1,0 +1,43 @@
+@import url("common-css.css");
+body{
+    background-color: #1a1a1a85;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+}
+.reset-s{
+    background-color: #1A1A1A;
+    padding: 30px;
+    border-radius: 10px;
+    width: 450px;
+    margin: 0 10px;
+}
+.reset-s .row-1{
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+.reset-s .row-1 i.close{
+    color: #E53F34;
+    font-size: 20px
+}
+.reset-s .row-1 i.true{
+    color: #4caf50;
+    font-size: 70px;
+}
+.reset-s .row-2 p{
+    line-height: 1.4;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.reset-s .row-2 span{
+    color: #fff;
+    font-size: 16px;
+}
+a{
+    color: var(--main-color);
+    text-decoration: none;
+}

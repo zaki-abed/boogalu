@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/all.pro.min.css">
+    <!-- File Css Main -->
+    <link rel="stylesheet" href="css/about-style.css">
+    <!-- Normalize Library -->
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+<!-- Start import Nav -->
+<div id="nav"></div>
+<!-- End import Nav -->
+<!-- Start Page -->
+<main>    
+    <!-- Start Title -->
+    <div class="title">
+        <div class="text">
+            <p>About us</p>
+            <span>Learn more about how Trewlink collects and uses data and your rights as a Trewlink user.</span>
+        </div>
+    </div>
+    <!-- End Title -->
+    <!-- Start About -->
+    <div class="about-us">
+        <p>Updated October 4, 2019</p>
+        <div class="box">
+            <span>Overview</span>
+            <p>
+                Boogaluu is a web and app-based digital platform for dance enthusiasts that give them the freedom to learn from a wide variety of dance styles from their favorite dance masters through structured modules anytime & anywhere. 
+            </p>
+            <p>
+                At boogaluu, we aspire to bridge the gap between physical and digital learning through our immersive technologies. 
+            </p>
+            <p>
+                Boogaluu’s learning modules are custom designed by renowned dancers and choreographers to cater to dance enthusiasts at various levels from kids, Adults - Beginners to Advanced. Our objective is to make learning dance fun and easy.
+            </p>
+            <p>
+                Boogaluu brings a unique opportunity to all creative hearts to create, share, showcase and compete at a global level through our events. 
+            </p>
+            <p>
+                With Boogaluu one doesn’t have to worry anymore about hunting dance studios, traveling to learn from favorite dancers, expensive workshops, and Juggling with your daily schedule. 
+            </p>
+            <p>
+                VISION: To Democratize structured learning using futuristic digital technologies and create a community of creative hearts. 
+            </p>
+            <p>
+                MISSION: Create a digital platform that gives universal access to learn performing arts with structured content curated by the best instructors globally; provide freedom to showcase your talent and opportunity to grow as a community.
+            </p>
+        </div>
+    <!-- End About -->
+</main>
+<!-- End Page -->
+    <!-- Jquery -->
+    <script src="js/jquery3.5.1.js"></script>
+    <!-- import nav -->
+    <script>
+        $(function(){
+            $("#nav").load("template.html");
+        })
+        $(document).ready(function(){
+            // To Show List Filter
+            $("a.filter").click(function(){
+                $(".filter-list .list").fadeToggle(); 
+            })
+            // To Hide LIst Filter
+            $("#btn-close").click(function(){
+                $(".filter-list .list").fadeOut(); 
+            })
+        })
+    </script>
+</body>
+</html>

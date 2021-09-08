@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="css/all.pro.min.css">
+    <!-- File Css Main -->
+    <link rel="stylesheet" href="css/contact-style.css">
+    <!-- Normalize Library -->
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+<!-- Start import Nav -->
+<div id="nav"></div>
+<!-- End import Nav -->
+<!-- Start Page -->
+<main>    
+    <div class="contact">
+        <div class="container-dashborad">
+            <h2>CONTACT US</h2>
+            <span>Reach us with your queries or concerns, & we'll help you with that.</span>
+            <form>
+                <div>
+                    <input type="text" placeholder="Full Name">
+                    <i class="fal fa-user"></i>
+                </div>
+                <div>
+                    <input type="text" placeholder="Email">
+                    <i class="fal fa-envelope"></i>
+                </div>
+                <div>
+                    <input type="text" placeholder="Phone">
+                    <i class="fal fa-phone"></i>
+                </div>
+                <div>
+                    <input type="text" placeholder="Address">
+                    <i class="fal fa-map-marker-alt"></i>
+                </div>
+                <div>
+                    <input type="text" placeholder="Subject">
+                    <i class="fal fa-sticky-note"></i>
+                </div>
+                <div>
+                    <textarea placeholder="Query/ Message/ Concerns"></textarea>
+                    <i class="fal fa-location-arrow"></i>
+                </div>
+                <a href="#">Submit</a>
+            </form>
+        </div>
+    </div>
+</main>
+<!-- End Page -->
+    <!-- Jquery -->
+    <script src="js/jquery3.5.1.js"></script>
+    <!-- import nav -->
+    <script>
+        $(function(){
+            $("#nav").load("template.html");
+        })
+        $(document).ready(function(){
+            // To Show List Filter
+            $("a.filter").click(function(){
+                $(".filter-list .list").fadeToggle(); 
+            })
+            // To Hide LIst Filter
+            $("#btn-close").click(function(){
+                $(".filter-list .list").fadeOut(); 
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+@import url("common-css.css");
+main{
+    font-family: 'Roboto';
+}
+.contact .container-dashborad{
+
+}
+.contact h2{
+    font-weight: 700;
+    font-family: 'Oswald';
+    margin: 40px 0 10px;
+}
+.contact span{
+    opacity: 50%;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 30px;
+}
+.contact form > div{
+    position: relative;
+}
+.contact form input,
+.contact form textarea{
+    background-color: #272727;
+    width: 100%;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 15px;
+    padding: 15px 0 15px 50px;
+    font-size: 14px;
+    color: #fff;
+}
+.contact form textarea{
+    height: 140px;
+}
+.contact form i{
+    font-size: 12px;
+    position: absolute; 
+    left: 25px;
+    top: 16px;
+}
+.contact a{
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px 0;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}

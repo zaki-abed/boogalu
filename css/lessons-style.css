@@ -1,0 +1,202 @@
+@import url("common-css.css");
+/* Start List */
+.list{
+    background-color: #1E1E1E;
+}
+.list ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+.list ul li{
+    margin-right: 10px;
+    text-align: center;
+}
+.list ul li a{
+    display: block;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.list ul li a.active{
+    border-bottom: 3px solid var(--main-color);
+}
+/* End List */
+/* Start Link */
+a.filter{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    width: fit-content; 
+    background-color: #3A3A3A;   
+    padding: 12px 17px;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+a.filter > i{
+    margin-right: 14px;
+}
+.filter-list{
+   position: relative; 
+}
+.filter-list .list{
+    display: none;
+    padding: 25px;
+    background-color: #1E1E1E;
+    position: absolute;
+    top: 53px;
+    left: 0;
+    z-index: 2;
+    min-width: 500px;
+    border-radius: 20px;
+}
+@media (max-width: 768px){
+    .filter-list .list{
+        min-width: 350px;
+    }
+}
+.filter-list .list .row-1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+.filter-list .list .row-1::before{
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #303030;
+}
+.filter-list .list .row-1 p{
+    flex: 1;
+    font-weight: 500;
+}
+.filter-list .list .row-1 i{
+    color: #E53F34;
+    font-size: 20px;
+}
+.filter-list .list .row-2{
+    display: flex;
+}
+.filter-list .list .row-2 > div{
+    flex-basis: 50%;
+}
+.filter-list .list .row-2 span{
+    display: block;
+    font-weight: 600;
+}
+.filter-list .list .row-2 p{
+    opacity: 50%;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.filter-list .list .row-2 .col-1 span{font-size: 14px;}
+.filter-list .list .row-2 .col-1 span:first-of-type,
+.filter-list .list .row-2 .col-1 span:nth-child(4){
+    padding: 7px 30px 7px 10px;
+    background-color: #3A3A3A;
+    width: fit-content;
+    border-radius: 30px;
+    position: relative;
+}
+.filter-list .list .row-2 .col-1 span:first-of-type::before,
+.filter-list .list .row-2 .col-1 span:nth-child(4)::before{
+    content: "\f00d";
+    font-family: 'Font Awesome 5 Pro';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 100;
+    background-color: #E53F34;
+    width: 13px;
+    height: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 8px;
+}
+.filter-list .list .row-2 .col-1 span:nth-child(3),
+.filter-list .list .row-2 .col-1 span:nth-child(5){
+    margin: 30px 0;
+}
+.filter-list .list .row-2 .col-2 span{
+    margin: 10px 0;
+    font-size: 12px;
+}
+/* End Link */
+/* Start Lessons */
+.lessons{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+}
+.lessons .box{
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px; 
+}
+.lessons .box .over-lay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0 ),rgba(0,0,0,0 ),rgba(0,0,0,0 ), rgba(0 0 0 /80%), rgba(0 0 0 /100%));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 13px;
+    border-radius: 10px; 
+}
+.lessons .box .over-lay a.link-a{
+    min-height: 270px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.lessons .box .row-1{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.lessons .box .row-1 a.box-link{
+    display: block;
+    width: fit-content;
+    color: #fff;
+    font-size: 10px;
+    text-decoration: none;
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.lessons .box .row-1 a:nth-child(2){background-color: #F7B054;}
+.lessons .box .row-1 a:nth-child(3){background-color: #5458F7;}
+.lessons .box .row-1 a:last-of-type{background-color: #FF5034;}
+.lessons .box .row-2 h3{
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.lessons .box .row-2 h3 + span{
+    opacity: 50%;
+    font-size: 11px;
+}
+
+.lessons .box .row-2 div:last-of-type{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #535353;
+}
+/* End Lessons */

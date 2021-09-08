@@ -1,0 +1,159 @@
+@import url("common-css.css");
+body{
+    font-family: 'Roboto';
+}
+@media (max-width: 768px){
+    body{
+        background-image: url(../image/create.png);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}
+.login{
+    display: flex;
+    height: 100vh;
+}
+@media (max-width: 768px){
+    .login{
+        justify-content: center;
+        align-items: center;
+    }
+}
+.login > div{
+    flex-basis: 50%;
+}
+@media (max-width: 768px){
+    .login > div{
+        flex-basis: 90%;
+    }
+}
+.login .col-1{
+    background-image: url(../image/create.png);
+    background-size: cover;
+    background-position: center center;
+}
+@media (max-width: 768px){
+    .login .col-1{
+        display: none;
+    }
+}
+.login .col-1 .logo{
+    height: 50px;
+}
+.login .col-1 .text{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+}
+.login .col-1 .text h2{
+    font-size: 70px;
+    font-family: Oswald;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+@media (max-width: 992px){
+    .login .col-1 .text h2{
+        font-size: 35px;
+    }
+}
+.login .col-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px){
+    .login .col-2{
+        background-color: rgba(0,0,0,.6);
+    }
+}
+.login .col-2 .content{
+    width: 500px;
+    padding: 20px;
+}
+@media (max-width: 768px){
+    .login .col-2 .content{
+        width: auto;
+    }
+}
+.login .col-2 .content .logo{
+    display: none !important;
+    height: 50px;
+    display: block;
+    margin: 0 auto 10px;
+}
+@media (max-width: 768px){
+    .login .col-2 .content .logo{
+        display: block !important;
+    }
+}
+.login .col-2 h3{
+    font-weight: 700;
+    font-size: 26px;
+    font-family: 'Oswald';
+    margin-bottom: 10px;
+}
+.login .col-2 p{
+    font-weight: 400;
+    font-size: 14px;
+    opacity: 50%;
+    margin-bottom: 20px;
+}
+.login .col-2 form > div{
+    position: relative;
+}
+.login .col-2 .form-row{
+    display: flex;
+    justify-content: space-between;
+}
+.login .col-2 .form-row-radio{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+.login .col-2 span{
+    margin-left: 8px;
+    font-size: 15px;
+    opacity: 50%;
+    font-weight: 300;
+}
+.login .col-2 .form-row > div{
+    position: relative;
+    width: 49%;
+}
+.login .col-2 form input:not(input[type="radio"], input[type="checkbox"]){
+    background-color: #272727;
+    margin-bottom: 10px;
+    border: 0;
+    border-radius: 5px;
+    padding: 17px 10px 17px 50px;
+    width: 100%;
+    color: #fff;
+}
+.login .col-2 form i{
+    position: absolute;
+    left: 23px;
+    top: 32%;
+    font-size: 14px;
+    opacity: 50%;
+}
+.login .col-2 form a.log{
+    display: block;
+    background-color: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    margin: 16px 0;
+}
+.login .col-2 .create{
+    display: block;
+    text-align: center;
+}
+.login .col-2 .create > a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 700;
+}

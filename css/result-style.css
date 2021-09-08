@@ -1,0 +1,98 @@
+@import url("common-css.css");
+body{
+    font-family: "Roboto";
+}
+.member .row-1{
+    margin: 50px 0 40px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 200px;
+}
+@media (max-width: 768px){
+    .member .row-1{
+        grid-template-columns: 1fr;
+    }
+}
+.member .row-1 h2{
+    justify-self: center
+}
+@media (max-width: 768px){
+    .member .row-1 h2{
+        margin-bottom: 10px;
+        justify-self: start;
+        font-size: 22px;
+    }
+}
+.member .row-1 a{
+    display: block;
+    
+    background-color: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.8;
+    padding: 10px 15px 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.member .row-1 a > i{
+    margin-right: 5px;
+}
+.member .row-2{
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    align-items: center;
+    padding: 15px 5px;
+    background-color: #3B3B3B;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.member .row-2 span{
+    justify-self: center;
+    opacity: 50%;
+}
+.member .row-2 i{
+    background-color: #535353;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.member table{
+    border-collapse: collapse;
+    width: 100%;
+    color: #909090;
+    font-size: 14px;
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    .member table{
+        font-size: 10px;
+        font-weight: normal;
+    }
+}
+.member table tr:first-of-type{
+    background-color: transparent !important;
+}
+.member table tr{
+    background-color: #3B3B3B;
+    border-bottom: 5px solid var(--background-body);
+    
+}
+.member table tr td{
+    padding: 10px;
+    border: none;
+}
+.member table tr > td:first-of-type{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.member table tr > td:last-of-type{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}

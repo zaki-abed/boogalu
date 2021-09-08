@@ -1,0 +1,124 @@
+@import url("common-css.css");
+main{
+    font-family: 'Roboto';
+}
+/* Start Title */
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 20px;
+}
+@media (max-width: 992px){
+    .title{
+        flex-direction: column;
+    }
+}
+.title a{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: block;
+    width: fit-content;
+    padding: 12px 21px;
+    background-color: #303030;
+    font-size: 13px;
+    font-weight: 600;
+    color: #AEAEB2;
+    border-radius: 8px;
+    text-decoration: none;
+}
+@media (max-width: 992px){
+    .title a{
+        top: -10px;
+        padding: 10px 18px;
+    }
+}
+.title .text{
+    margin-right: 15px;
+}
+@media (max-width: 992px){
+    .title .text{
+        margin-top: 15px;
+    }
+}
+.title .text p{
+    font-size: 35px;
+}
+@media (max-width: 992px){
+    .title .text p{
+        font-size: 29px;
+    }
+}
+.title .text span{
+    color: #AEAEB2;
+    line-height: 1.8;
+    display: block;
+}
+@media (min-width: 1100px) {
+    .title .text span{
+        width: 70%;
+    }
+}
+@media (max-width: 992px){
+    .title .text span{
+        font-size: 12px;
+    }
+}
+.title img{
+    width: 40%;
+}
+@media (max-width: 768px){
+    .title img{
+        margin-top: 25px;
+        width: 100%;
+    }
+}
+/* End Tilte */
+/* Start Privacy */
+.privacy{
+    padding: 20px;
+}
+.privacy > p{
+    font-size: 23px;
+    margin-bottom: 50px;
+    position: relative;
+}
+.privacy > p::before{
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #B6B6B6;
+}
+.privacy > div{
+    margin: 60px 0;
+}
+.privacy span{
+    margin: 0 0 20px;
+    display: block;
+    font-size: 20px;
+}
+.privacy > div p{
+    color: #AEAEB2;
+    line-height: 1.7;
+    font-size: 15px;
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 15px;
+}
+.privacy > div p::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 7px;
+    height: 7px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+/* End Privacy */
