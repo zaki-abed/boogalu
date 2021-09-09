@@ -165,13 +165,13 @@ header nav .links a:last-of-type{
     background-color: var(--btn-background-color);
     border: 1px solid var(--btn-background-color);
 }
-header .toggle-menu{
+header #toggle-menu{
     display: none;
     font-size: 25px;
     cursor: pointer;
 }
 @media (max-width: 768px){
-    header .toggle-menu{
+    header #toggle-menu{
         display: block;
     }
 }
