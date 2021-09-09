@@ -28,10 +28,10 @@ main{
 }
 .event-pup .title .img{
     height: 250px;
-    background-image: url(../image/login.png);
+    background-image: url(../image/create.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0 -74px;
+    background-position: center 0px;
 }
 .event-pup .title div:last-of-type{
     height: 50px;
