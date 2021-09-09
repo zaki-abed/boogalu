@@ -40,6 +40,7 @@
                     <a href="create.html">GET STARTED</a>
                 </div>
             </nav>
+            <i class="fal fa-bars" id="toggle-menu"></i>
         </div>
     </header>
     <!-- End Header -->
@@ -340,7 +341,7 @@
     <!-- Plugin js -->
     <script>
         $(document).ready(function(){
-                $(".toggle-menu").click(function(){
+                $("#toggle-menu").click(function(){
                 $("header nav").fadeToggle(); 
             })
         })
