@@ -20,4 +20,25 @@ This is a simulation project for learning purposes and does not claim ownership 
 
 ## Screenshots
 **index Page**
+
 ![Screenshot 1](image/demo/index.png)
+
+**Login Page**
+
+![Screenshot 1](image/demo/login.png)
+
+
+**Dashboard Page**
+
+![Screenshot 1](image/demo/dashboard.png)
+
+
+**Event Page**
+
+![Screenshot 1](image/demo/event.png)
+
+
+**Lessons Page**
+
+![Screenshot 1](image/demo/lessons.png)
+
